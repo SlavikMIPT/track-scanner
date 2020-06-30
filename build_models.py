@@ -118,7 +118,7 @@ class FlightModelBuilder(ModelBuilderMixin):
         from glob import glob
 
         directory = glob('./data/train/flight/*.csv')
-        train_files = list()
+        train_files = []
 
         for name in directory:
             df = pandas.read_csv(name)
@@ -154,7 +154,7 @@ class AircraftModelBuilder(ModelBuilderMixin):
         from glob import glob
 
         directory = glob('./data/train/aircraft/*.csv')
-        train_files = list()
+        train_files = []
 
         for name in directory:
             df = pandas.read_csv(name)
@@ -199,7 +199,7 @@ class GroundModelBuilder(ModelBuilderMixin):
         from glob import glob
 
         directory = glob('./data/train/ground/*.csv')
-        train_files = list()
+        train_files = []
 
         for name in directory:
             df = pandas.read_csv(name)

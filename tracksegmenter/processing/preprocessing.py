@@ -60,8 +60,6 @@ class Preprocessor:
 
     def frequency(self, time_series):
         most_used_freq = time_series.value_counts().index.values[0]
-        frequency = (
+        return (
             1000 / most_used_freq.astype('timedelta64[ms]').astype('float')
         )
-
-        return frequency
